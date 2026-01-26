@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:portfolio/constants/images.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HeaderSection extends StatelessWidget {
@@ -17,6 +16,37 @@ class HeaderSection extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
+        // Profile Image
+        Container(
+          margin: const EdgeInsets.only(top: 20),
+          height: 300,
+          width: 300,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            border: Border.all(color: primaryColor, width: 3),
+            boxShadow: [
+              BoxShadow(
+                color: isDark
+                    ? primaryColor.withValues(alpha: 0.3)
+                    : primaryColor.withValues(alpha: 0.1),
+                blurRadius: 30,
+                spreadRadius: 10,
+              ),
+            ],
+            image: DecorationImage(
+              image: NetworkImage(
+                'https://testharhtzkiftxpazyx.supabase.co/storage/v1/object/public/hcdev/dp.jpg',
+              ),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        if (isDesktop) ...[
+          const SizedBox(width: 40),
+        ] else ...[
+          const SizedBox(height: 40),
+        ],
+
         Expanded(
           flex: isDesktop ? 2 : 0,
           child: Column(
@@ -54,7 +84,11 @@ class HeaderSection extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               Text(
-                "I build beautiful, performant mobile applications for Android and iOS. Specialized in clean architecture, backend integration, and creating seamless user experiences.",
+                '''Flutter Developer with 3 years of experience in creating high-performance, crossplatform applications using Flutter and Dart. Expertise in integrating Firebase,
+REST APIs, and third-party packages to enhance app functionality. Proficient in
+state management solutions such as Riverpod, GetX, and Provider, ensuring
+scalable and maintainable code. Committed to implementing clean architecture
+and optimizing performance for user-friendly interfaces.''',
                 style: TextStyle(
                   color: isDark ? Colors.grey[400] : Colors.grey[600],
                   fontSize: 16,
@@ -83,33 +117,6 @@ class HeaderSection extends StatelessWidget {
                 ],
               ),
             ],
-          ),
-        ),
-        if (isDesktop) const SizedBox(width: 40),
-
-        // Profile Image
-        Container(
-          margin: const EdgeInsets.only(top: 20),
-          height: 300,
-          width: 300,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            border: Border.all(color: primaryColor, width: 3),
-            boxShadow: [
-              BoxShadow(
-                color: isDark
-                    ? primaryColor.withValues(alpha: 0.3)
-                    : primaryColor.withValues(alpha: 0.1),
-                blurRadius: 30,
-                spreadRadius: 10,
-              ),
-            ],
-            image: DecorationImage(
-              image: NetworkImage(
-                'https://testharhtzkiftxpazyx.supabase.co/storage/v1/object/public/hcdev/dp.jpg',
-              ),
-              fit: BoxFit.cover,
-            ),
           ),
         ),
       ],

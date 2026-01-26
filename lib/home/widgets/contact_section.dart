@@ -30,6 +30,7 @@ class ContactSection extends StatelessWidget {
         children: [
           const Text(
             "Let's Work Together or Hire Me",
+            textAlign: TextAlign.center,
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 10),

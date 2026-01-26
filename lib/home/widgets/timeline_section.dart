@@ -12,13 +12,13 @@ class TimelineSection extends StatelessWidget {
           title: "Laysan Tecnologies Pvt. Ltd.",
           subtitle: "Tech Solutions Inc.",
           desc:
-              "Leading the mobile team, architecting scalable apps, and mentoring juniors.",
+              '''Developed and maintained 10+ cross-platform apps using Flutter, Integrated Firebase for authentication, analytics, push notifications, etc. Implemented Riverpod, Getx. Provider, etc for state management and improved app performance. Refactored outdated codebases and resolved compatibility issues in older projects.''',
           isEducation: false,
         ),
         TimelineTile(
           year: "2019 - 2022",
           title: "Bachelor of Computer Applications",
-          subtitle: "Baddi University",
+          subtitle: "Baddi University, Himachal Pradesh",
           desc: "Graduated with honors. Focus on Software Engineering.",
           isEducation: true,
         ),

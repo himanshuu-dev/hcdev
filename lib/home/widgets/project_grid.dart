@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:portfolio/constants/images.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ProjectsGrid extends StatelessWidget {
@@ -61,10 +60,11 @@ class ProjectsGrid extends StatelessWidget {
         title: "CucuApp",
         desc:
             "The CucuApp is developed to provide farmers and agricultural stakeholders with critical, evidence-based information on effective cucumber farming practices.",
-        image: AppImages.cucuapp,
+        image:
+            'https://testharhtzkiftxpazyx.supabase.co/storage/v1/object/public/hcdev/cucuapp.png',
         tags: ['Flutter', 'Dart', 'Getx', 'Localizations'],
         playstoreUri:
-            'https://testharhtzkiftxpazyx.supabase.co/storage/v1/object/public/hcdev/cucuapp.png',
+            'https://play.google.com/store/apps/details?id=com.cucuapp&hl=en_IN',
       ),
       ProjectModel(
         title: "SME World Asia",
@@ -87,7 +87,7 @@ class ProjectsGrid extends StatelessWidget {
             crossAxisCount: constraints.maxWidth > 800 ? 3 : 1,
             crossAxisSpacing: 20,
             mainAxisSpacing: 20,
-            childAspectRatio: constraints.maxWidth > 800 ? 0.9 : 0.7,
+            childAspectRatio: constraints.maxWidth > 800 ? 0.9 : 0.8,
           ),
           itemCount: projects.length,
           itemBuilder: (context, index) {

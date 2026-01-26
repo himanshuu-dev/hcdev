@@ -5,8 +5,7 @@ import 'package:portfolio/home/widgets/navbar.dart';
 import 'package:portfolio/home/widgets/project_grid.dart';
 import 'package:portfolio/home/widgets/skills_section.dart';
 import 'package:portfolio/home/widgets/timeline_section.dart';
-
-import 'package:web/web.dart' as web;
+import 'package:url_launcher/url_launcher.dart';
 
 class PortfolioHome extends StatelessWidget {
   const PortfolioHome({super.key});
@@ -71,9 +70,10 @@ class PortfolioHome extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
-          downloadAssetWeb(
-            'assets/himanshu.pdf',
-            'himanshu_flutter_developer_resume.pdf',
+          launchUrl(
+            Uri.parse(
+              'https://testharhtzkiftxpazyx.supabase.co/storage/v1/object/public/hcdev/himanshu.pdf',
+            ),
           );
         },
         backgroundColor: Theme.of(context).primaryColor,
@@ -127,14 +127,4 @@ class SectionTitle extends StatelessWidget {
       ),
     );
   }
-}
-
-void downloadAssetWeb(String assetPath, String fileName) {
-  final anchor = web.HTMLAnchorElement()
-    ..href = assetPath
-    ..download = fileName;
-
-  web.document.body!.append(anchor);
-  anchor.click();
-  anchor.remove();
 }
