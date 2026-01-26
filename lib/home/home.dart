@@ -6,6 +6,8 @@ import 'package:portfolio/home/widgets/project_grid.dart';
 import 'package:portfolio/home/widgets/skills_section.dart';
 import 'package:portfolio/home/widgets/timeline_section.dart';
 
+import 'package:web/web.dart' as web;
+
 class PortfolioHome extends StatelessWidget {
   const PortfolioHome({super.key});
 
@@ -41,7 +43,10 @@ class PortfolioHome extends StatelessWidget {
               const SectionTitle(title: "My Skills", number: "01"),
               const SkillsSection(),
               const SizedBox(height: 80),
-              const SectionTitle(title: "Featured Client Projects", number: "02"),
+              const SectionTitle(
+                title: "Featured Client Projects",
+                number: "02",
+              ),
               const ProjectsGrid(),
               const SizedBox(height: 80),
               // const SectionTitle(title: "Personal Projects", number: "03"),
@@ -65,7 +70,12 @@ class PortfolioHome extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
+        onPressed: () {
+          downloadAssetWeb(
+            'assets/himanshu.pdf',
+            'himanshu_flutter_developer_resume.pdf',
+          );
+        },
         backgroundColor: Theme.of(context).primaryColor,
         icon: Icon(Icons.download, color: isDark ? Colors.black : Colors.white),
         label: Text(
@@ -117,4 +127,14 @@ class SectionTitle extends StatelessWidget {
       ),
     );
   }
+}
+
+void downloadAssetWeb(String assetPath, String fileName) {
+  final anchor = web.HTMLAnchorElement()
+    ..href = assetPath
+    ..download = fileName;
+
+  web.document.body!.append(anchor);
+  anchor.click();
+  anchor.remove();
 }

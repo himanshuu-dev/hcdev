@@ -73,7 +73,8 @@ class HeaderSection extends StatelessWidget {
                   ),
                   SocialIcon(
                     icon: FontAwesomeIcons.linkedin,
-                    url: 'https://www.linkedin.com/in/himanshu-choudhary-dev-1999-new/',
+                    url:
+                        'https://www.linkedin.com/in/himanshu-choudhary-dev-1999-new/',
                   ),
                   SocialIcon(
                     icon: FontAwesomeIcons.instagram,
@@ -97,14 +98,16 @@ class HeaderSection extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                 color: isDark
-                    ? primaryColor.withValues(alpha:0.3)
-                    : primaryColor.withValues(alpha:0.1),
+                    ? primaryColor.withValues(alpha: 0.3)
+                    : primaryColor.withValues(alpha: 0.1),
                 blurRadius: 30,
                 spreadRadius: 10,
               ),
             ],
             image: DecorationImage(
-              image: AssetImage(AppImages.dp),
+              image: NetworkImage(
+                'https://testharhtzkiftxpazyx.supabase.co/storage/v1/object/public/hcdev/dp.jpg',
+              ),
               fit: BoxFit.cover,
             ),
           ),

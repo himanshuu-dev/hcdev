@@ -12,7 +12,8 @@ class ProjectsGrid extends StatelessWidget {
       ProjectModel(
         title: "Tastes2plate",
         desc: "Tastes2Plate (t2p) - Online Intercity Food Delivery App.",
-        image: AppImages.t2p,
+        image:
+            'https://testharhtzkiftxpazyx.supabase.co/storage/v1/object/public/hcdev/t2p.png',
         tags: [
           'Flutter',
           'Dart',
@@ -28,7 +29,8 @@ class ProjectsGrid extends StatelessWidget {
       ProjectModel(
         title: "RucJa",
         desc: "Health Monitor Application",
-        image: AppImages.rucja,
+        image:
+            'https://testharhtzkiftxpazyx.supabase.co/storage/v1/object/public/hcdev/rucja.png',
         tags: ['Flutter', 'Dart', 'Riverpod', 'Bluetooth'],
         playstoreUri:
             'https://play.google.com/store/apps/details?id=app.rucja.io',
@@ -38,7 +40,8 @@ class ProjectsGrid extends StatelessWidget {
         title: "InteriorChowk",
         desc:
             "Interior chowk: The best architects and interior designers shopping platform without any brokerage fees",
-        image: AppImages.ic,
+        image:
+            'https://testharhtzkiftxpazyx.supabase.co/storage/v1/object/public/hcdev/ic.png',
         tags: ['Flutter', 'Dart', 'Provider', 'Razorpay', 'Google Maps'],
         playstoreUri:
             'https://play.google.com/store/apps/details?id=com.interiorchowk.app',
@@ -48,7 +51,8 @@ class ProjectsGrid extends StatelessWidget {
         title: "YumFresh",
         desc:
             "Your Ultimate Destination for Fresh Fish, Chicken & Mutton Delivery in Kolkata & Howrah",
-        image: AppImages.yumfresh,
+        image:
+            'https://testharhtzkiftxpazyx.supabase.co/storage/v1/object/public/hcdev/yumfresh.png',
         tags: ['Flutter', 'Dart', 'Provider', 'Razorpay', 'Google Maps'],
         playstoreUri:
             'https://play.google.com/store/apps/details?id=com.yumfresh.app',
@@ -60,13 +64,14 @@ class ProjectsGrid extends StatelessWidget {
         image: AppImages.cucuapp,
         tags: ['Flutter', 'Dart', 'Getx', 'Localizations'],
         playstoreUri:
-            'https://play.google.com/store/apps/details?id=com.cucuapp',
+            'https://testharhtzkiftxpazyx.supabase.co/storage/v1/object/public/hcdev/cucuapp.png',
       ),
       ProjectModel(
         title: "SME World Asia",
         desc:
             "The app provides news, insights, and practical guidance to support the development of SMEs across India and beyond.",
-        image: AppImages.sme,
+        image:
+            'https://testharhtzkiftxpazyx.supabase.co/storage/v1/object/public/hcdev/sme.png',
         tags: ['Flutter', 'Dart', 'Webview'],
         playstoreUri:
             'https://play.google.com/store/apps/details?id=smeworld.news.app',
@@ -82,7 +87,7 @@ class ProjectsGrid extends StatelessWidget {
             crossAxisCount: constraints.maxWidth > 800 ? 3 : 1,
             crossAxisSpacing: 20,
             mainAxisSpacing: 20,
-            childAspectRatio: 0.9,
+            childAspectRatio: constraints.maxWidth > 800 ? 0.9 : 0.7,
           ),
           itemCount: projects.length,
           itemBuilder: (context, index) {
@@ -125,9 +130,10 @@ class ProjectCard extends StatelessWidget {
               borderRadius: const BorderRadius.vertical(
                 top: Radius.circular(16),
               ),
-              child: Image.asset(
+              child: Image.network(
                 project.image,
                 width: double.infinity,
+                cacheHeight: 500,
                 fit: BoxFit.cover,
               ),
             ),
