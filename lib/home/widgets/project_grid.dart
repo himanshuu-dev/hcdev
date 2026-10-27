@@ -13,7 +13,15 @@ class ProjectsGrid extends StatelessWidget {
         imageAsset: 'assets/fomo-corp-cover.png',
         desc:
             "Completed development of a B2B mobility platform for corporate cab operations and business travel workflows, built with Flutter and Dart.",
-        tags: ['Flutter', 'Dart', 'B2B', 'Booking', 'Maps', 'Enterprise'],
+        tags: [
+          'Flutter',
+          'Dart',
+          'Riverpod',
+          'B2B',
+          'Booking',
+          'Maps',
+          'Enterprise',
+        ],
         links: const [
           ProjectLink(
             label: 'Play Store',
@@ -34,7 +42,15 @@ class ProjectsGrid extends StatelessWidget {
         imageAsset: 'assets/fomo-cabs-cover.png',
         desc:
             "Completed development of a B2C cab-booking app with Flutter and Dart, focused on rider discovery, booking flows, and customer-friendly journeys.",
-        tags: ['Flutter', 'Dart', 'B2C', 'Booking', 'Maps', 'Mobile UX'],
+        tags: [
+          'Flutter',
+          'Dart',
+          'Provider',
+          'B2C',
+          'Booking',
+          'Maps',
+          'Mobile UX',
+        ],
         links: const [
           ProjectLink(
             label: 'Play Store',
