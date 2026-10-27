@@ -84,11 +84,7 @@ class HeaderSection extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               Text(
-                '''Flutter Developer with 3 years of experience in creating high-performance, crossplatform applications using Flutter and Dart. Expertise in integrating Firebase,
-REST APIs, and third-party packages to enhance app functionality. Proficient in
-state management solutions such as Riverpod, GetX, and Provider, ensuring
-scalable and maintainable code. Committed to implementing clean architecture
-and optimizing performance for user-friendly interfaces.''',
+                '''I'm a Flutter Developer with 3+ years of experience turning ideas into reliable Android and iOS apps. My work spans mobility, food delivery, e-commerce, and health, including Fomo Cabs and Fomo Corp at Zopflix (Shipra Travels). I build intuitive interfaces backed by maintainable architecture, thoughtful state management, and seamless API, maps, and payment integrations. From development to app store releases, I care about the details that make an app feel simple, responsive, and dependable.''',
                 style: TextStyle(
                   color: isDark ? Colors.grey[400] : Colors.grey[600],
                   fontSize: 16,
@@ -125,7 +121,7 @@ and optimizing performance for user-friendly interfaces.''',
 }
 
 class SocialIcon extends StatelessWidget {
-  final IconData icon;
+  final FaIconData icon;
   final String url;
   const SocialIcon({super.key, required this.icon, required this.url});
 

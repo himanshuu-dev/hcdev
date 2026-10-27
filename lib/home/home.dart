@@ -71,9 +71,7 @@ class PortfolioHome extends StatelessWidget {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           launchUrl(
-            Uri.parse(
-              'https://testharhtzkiftxpazyx.supabase.co/storage/v1/object/public/hcdev/himanshu.pdf',
-            ),
+            Uri.base.resolve('himanshu.pdf'),
           );
         },
         backgroundColor: Theme.of(context).primaryColor,

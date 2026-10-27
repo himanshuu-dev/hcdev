@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class TimelineSection extends StatelessWidget {
   const TimelineSection({super.key});
@@ -8,9 +9,24 @@ class TimelineSection extends StatelessWidget {
     return Column(
       children: const [
         TimelineTile(
-          year: "2023 - Present",
-          title: "Laysan Tecnologies Pvt. Ltd.",
-          subtitle: "Tech Solutions Inc.",
+          year: "Mar 2, 2026 - Nov 25, 2026 (scheduled end)",
+          title: "Flutter Developer",
+          subtitle: "Zopflix (Shipra Travels)",
+          desc:
+              '''Completed Flutter development for two mobility products: Fomo Corp, a B2B platform for corporate cab operations and business travel workflows, and Fomo Cabs, a B2C cab-booking app focused on rider discovery and booking journeys. Worked on cross-platform interfaces, booking and maps experiences, and integrations, with a focus on maintainable architecture and consistent user experiences. Employment is scheduled to conclude on November 25, 2026.''',
+          links: [
+            TimelineLink(label: "Zopflix", url: "https://www.zopflix.com/"),
+            TimelineLink(
+              label: "Shipra Travels",
+              url: "https://www.shipratravels.com/",
+            ),
+          ],
+          isEducation: false,
+        ),
+        TimelineTile(
+          year: "Mar 2023 - Feb 2026",
+          title: "Flutter Developer",
+          subtitle: "Laysan Technologies Pvt. Ltd.",
           desc:
               '''Developed and maintained 10+ cross-platform apps using Flutter, Integrated Firebase for authentication, analytics, push notifications, etc. Implemented Riverpod, Getx. Provider, etc for state management and improved app performance. Refactored outdated codebases and resolved compatibility issues in older projects.''',
           isEducation: false,
@@ -33,6 +49,7 @@ class TimelineTile extends StatelessWidget {
   final String subtitle;
   final String desc;
   final bool isEducation;
+  final List<TimelineLink> links;
 
   const TimelineTile({
     super.key,
@@ -41,6 +58,7 @@ class TimelineTile extends StatelessWidget {
     required this.subtitle,
     required this.desc,
     required this.isEducation,
+    this.links = const [],
   });
 
   @override
@@ -108,6 +126,23 @@ class TimelineTile extends StatelessWidget {
                       color: isDark ? Colors.grey[500] : Colors.grey[700],
                     ),
                   ),
+                  if (links.isNotEmpty) ...[
+                    const SizedBox(height: 14),
+                    Wrap(
+                      spacing: 10,
+                      runSpacing: 10,
+                      children: [
+                        for (final link in links)
+                          OutlinedButton.icon(
+                            onPressed: () {
+                              launchUrl(Uri.parse(link.url));
+                            },
+                            icon: const Icon(Icons.open_in_new, size: 16),
+                            label: Text(link.label),
+                          ),
+                      ],
+                    ),
+                  ],
                 ],
               ),
             ),
@@ -116,4 +151,11 @@ class TimelineTile extends StatelessWidget {
       ),
     );
   }
+}
+
+class TimelineLink {
+  final String label;
+  final String url;
+
+  const TimelineLink({required this.label, required this.url});
 }

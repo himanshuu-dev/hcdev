@@ -7,25 +7,117 @@ class SkillsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final primaryColor = Theme.of(context).primaryColor;
 
-    final skills = [
-      {"name": "Flutter", "icon": FontAwesomeIcons.flutter},
-      {"name": "Dart", "icon": FontAwesomeIcons.dartLang},
-      {"name": "Firebase", "icon": FontAwesomeIcons.fire},
-      {"name": "REST API", "icon": Icons.api},
-      {"name": "Provider", "icon": FontAwesomeIcons.dartLang},
-      {"name": "Riverpod", "icon": FontAwesomeIcons.dartLang},
-      {"name": "Bloc", "icon": FontAwesomeIcons.dartLang},
-      {"name": "GetX", "icon": FontAwesomeIcons.dartLang},
-      {"name": "MVVM", "icon": FontAwesomeIcons.filesPinwheel},
-      {"name": "Git", "icon": FontAwesomeIcons.gitAlt},
-      {"name": "CI/CD", "icon": FontAwesomeIcons.codeCommit},
-      {"name": "Supabase", "icon": FontAwesomeIcons.database},
-      {"name": "SQFlite", "icon": FontAwesomeIcons.database},
-      {"name": "UI/UX", "icon": Icons.brush},
-      {"name": "Payment Gateways", "icon": FontAwesomeIcons.creditCard},
-      {"name": "Google Playstore", "icon": FontAwesomeIcons.googlePlay},
-      {"name": "Appstore", "icon": FontAwesomeIcons.appStore},
+    final List<SkillChipData> skills = [
+      SkillChipData(
+        name: "Flutter",
+        icon: FaIcon(FontAwesomeIcons.flutter, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "Dart",
+        icon: FaIcon(FontAwesomeIcons.dartLang, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "Firebase",
+        icon: FaIcon(FontAwesomeIcons.fire, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "REST API Integration",
+        icon: Icon(Icons.api, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "Google Maps Integration",
+        icon: Icon(Icons.map_outlined, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "Booking Workflows",
+        icon: Icon(Icons.book_online_outlined, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "Cross-Platform Development",
+        icon: Icon(Icons.devices, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "Responsive UI",
+        icon: Icon(
+          Icons.dashboard_customize_outlined,
+          color: primaryColor,
+          size: 20,
+        ),
+      ),
+      SkillChipData(
+        name: "Provider",
+        icon: FaIcon(FontAwesomeIcons.dartLang, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "Riverpod",
+        icon: FaIcon(FontAwesomeIcons.dartLang, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "GetX",
+        icon: FaIcon(FontAwesomeIcons.dartLang, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "MVVM",
+        icon: FaIcon(
+          FontAwesomeIcons.filesPinwheel,
+          color: primaryColor,
+          size: 20,
+        ),
+      ),
+      SkillChipData(
+        name: "Git",
+        icon: FaIcon(FontAwesomeIcons.gitAlt, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "CI/CD",
+        icon: FaIcon(
+          FontAwesomeIcons.codeCommit,
+          color: primaryColor,
+          size: 20,
+        ),
+      ),
+      SkillChipData(
+        name: "Supabase",
+        icon: FaIcon(FontAwesomeIcons.database, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "SQFlite",
+        icon: FaIcon(FontAwesomeIcons.database, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "Offline-First Architecture",
+        icon: Icon(Icons.offline_bolt_outlined, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "Local Data Caching",
+        icon: Icon(Icons.storage_rounded, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "UI/UX",
+        icon: Icon(Icons.brush, color: primaryColor, size: 20),
+      ),
+      SkillChipData(
+        name: "Razorpay Integration",
+        icon: FaIcon(
+          FontAwesomeIcons.creditCard,
+          color: primaryColor,
+          size: 20,
+        ),
+      ),
+      SkillChipData(
+        name: "Google Play Publishing",
+        icon: FaIcon(
+          FontAwesomeIcons.googlePlay,
+          color: primaryColor,
+          size: 20,
+        ),
+      ),
+      SkillChipData(
+        name: "App Store Publishing",
+        icon: FaIcon(FontAwesomeIcons.appStore, color: primaryColor, size: 20),
+      ),
     ];
 
     return Wrap(
@@ -52,14 +144,10 @@ class SkillsSection extends StatelessWidget {
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(
-                skill['icon'] as IconData,
-                color: Theme.of(context).primaryColor,
-                size: 20,
-              ),
+              skill.icon,
               const SizedBox(width: 10),
               Text(
-                skill['name'] as String,
+                skill.name,
                 style: const TextStyle(fontWeight: FontWeight.w500),
               ),
             ],
@@ -68,4 +156,11 @@ class SkillsSection extends StatelessWidget {
       }).toList(),
     );
   }
+}
+
+class SkillChipData {
+  final String name;
+  final Widget icon;
+
+  const SkillChipData({required this.name, required this.icon});
 }
