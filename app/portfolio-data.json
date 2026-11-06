@@ -1,0 +1,221 @@
+{
+  "skills": [
+    "Flutter",
+    "Dart",
+    "Firebase",
+    "REST API Integration",
+    "Google Maps Integration",
+    "Booking Workflows",
+    "Cross-Platform Development",
+    "Responsive UI",
+    "Provider",
+    "Riverpod",
+    "GetX",
+    "MVVM",
+    "Git",
+    "CI/CD",
+    "Supabase",
+    "SQFlite",
+    "Offline-First Architecture",
+    "Local Data Caching",
+    "UI/UX",
+    "Razorpay Integration",
+    "Google Play Publishing",
+    "App Store Publishing"
+  ],
+  "projects": [
+    {
+      "title": "Fomo Corp",
+      "description": "Completed development of a B2B mobility platform for corporate cab operations and business travel workflows, built with Flutter and Dart.",
+      "badge": "Completed",
+      "image": "/images/fomo-corp-cover.webp",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Riverpod",
+        "B2B",
+        "Booking",
+        "Maps",
+        "Enterprise"
+      ],
+      "links": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.fomo.corp",
+          "label": "Play Store"
+        },
+        {
+          "url": "https://apps.apple.com/in/app/fomo-corp/id6759895436",
+          "label": "App Store"
+        }
+      ]
+    },
+    {
+      "title": "Fomo Cabs",
+      "description": "Completed development of a B2C cab-booking app with Flutter and Dart, focused on rider discovery, booking flows, and customer-friendly journeys.",
+      "badge": "Completed",
+      "image": "/images/fomo-cabs-cover.webp",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Provider",
+        "B2C",
+        "Booking",
+        "Maps",
+        "Mobile UX"
+      ],
+      "links": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.fomo.cabs",
+          "label": "Play Store"
+        },
+        {
+          "url": "https://apps.apple.com/in/app/fomo-cabs/id6756609332",
+          "label": "App Store"
+        }
+      ]
+    },
+    {
+      "title": "Tastes2plate",
+      "description": "Tastes2Plate (t2p) - Online Intercity Food Delivery App.",
+      "badge": "100K+ downloads",
+      "image": "/images/t2p.webp",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "GetX",
+        "Razorpay",
+        "Google Maps",
+        "Responsive App"
+      ],
+      "links": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=me.taste2plate.app.customer",
+          "label": "Play Store"
+        },
+        {
+          "url": "https://apps.apple.com/in/app/tastes2plate/id1568888741",
+          "label": "App Store"
+        }
+      ]
+    },
+    {
+      "title": "RucJa",
+      "description": "Health Monitor Application",
+      "badge": "Completed",
+      "image": "/images/rucja.webp",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Riverpod",
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=app.rucja.io",
+          "label": "Play Store"
+        },
+        {
+          "url": "https://apps.apple.com/in/app/rucja/id6748079206",
+          "label": "App Store"
+        }
+      ]
+    },
+    {
+      "title": "InteriorChowk",
+      "description": "Interior chowk: The best architects and interior designers shopping platform without any brokerage fees",
+      "badge": "10K+ downloads",
+      "image": "/images/ic.webp",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Provider",
+        "Razorpay",
+        "Google Maps"
+      ],
+      "links": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.interiorchowk.app",
+          "label": "Play Store"
+        },
+        {
+          "url": "https://apps.apple.com/in/app/interiorchowk/id6554003290",
+          "label": "App Store"
+        }
+      ]
+    },
+    {
+      "title": "YumFresh",
+      "description": "Your Ultimate Destination for Fresh Fish, Chicken & Mutton Delivery in Kolkata & Howrah",
+      "badge": "Completed",
+      "image": "/images/yumfresh.webp",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Provider",
+        "Razorpay",
+        "Google Maps"
+      ],
+      "links": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.yumfresh.app",
+          "label": "Play Store"
+        }
+      ]
+    },
+    {
+      "title": "CucuApp",
+      "description": "The CucuApp is developed to provide farmers and agricultural stakeholders with critical, evidence-based information on effective cucumber farming practices.",
+      "badge": "Completed",
+      "image": "/images/cucuapp.webp",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Getx",
+        "Localizations"
+      ],
+      "links": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.cucuapp&hl=en_IN",
+          "label": "Play Store"
+        }
+      ]
+    },
+    {
+      "title": "SME World Asia",
+      "description": "The app provides news, insights, and practical guidance to support the development of SMEs across India and beyond.",
+      "badge": "Completed",
+      "image": "/images/sme.webp",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Webview"
+      ],
+      "links": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=smeworld.news.app",
+          "label": "Play Store"
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "title": "Flutter Developer",
+      "subtitle": "Zopflix (Shipra Travels)",
+      "description": "Completed Flutter development for two mobility products: Fomo Corp, a B2B platform for corporate cab operations and business travel workflows, and Fomo Cabs, a B2C cab-booking app focused on rider discovery and booking journeys. Worked on cross-platform interfaces, booking and maps experiences, and integrations, with a focus on maintainable architecture and consistent user experiences. Employment is scheduled to conclude on November 25, 2026.",
+      "year": "Mar 2, 2026 - Nov 25, 2026 (scheduled end)"
+    },
+    {
+      "title": "Flutter Developer",
+      "subtitle": "Laysan Technologies Pvt. Ltd.",
+      "description": "Developed and maintained 10+ cross-platform apps using Flutter, Integrated Firebase for authentication, analytics, push notifications, etc. Implemented Riverpod, Getx. Provider, etc for state management and improved app performance. Refactored outdated codebases and resolved compatibility issues in older projects.",
+      "year": "Mar 2023 - Feb 2026"
+    },
+    {
+      "title": "Bachelor of Computer Applications",
+      "subtitle": "Baddi University, Himachal Pradesh",
+      "description": "Graduated with honors. Focus on Software Engineering.",
+      "year": "2019 - 2022"
+    }
+  ]
+}
