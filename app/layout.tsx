@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: site.title,
   description: site.description,
   applicationName: site.name,
+  verification: { google: "Iz338dvFb8da7XzSxL0e4k-sxYBBCW1REmDqtWuW6YA" },
   authors: [{ name: "Himanshu Choudhary", url: site.url }],
   creator: "Himanshu Choudhary",
   alternates: { canonical: "/" },

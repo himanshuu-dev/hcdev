@@ -15,3 +15,7 @@ The share image is public/images/social-preview.png (1200 by 630); its editable 
 5. Track indexing, relevant search queries, clicks, and Core Web Vitals before deciding on further changes.
 
 A successful deployment and valid metadata do not prove Google has indexed the site or guarantee a ranking. The site has not been submitted to Search Console in this task. Keep publishing concrete project explanations and link the portfolio from your GitHub and LinkedIn profiles.
+
+## HTML-tag verification
+
+The homepage metadata in `app/layout.tsx` includes the Google site verification token supplied by the owner for URL-prefix verification. Keep it after verification succeeds. This tag does not verify a Domain property, which requires DNS. Adding the tag does not itself confirm ownership; the owner must click Verify in Search Console after deployment.
