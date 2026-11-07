@@ -28,7 +28,7 @@
   "projects": [
     {
       "title": "Fomo Corp",
-      "description": "Completed development of a B2B mobility platform for corporate cab operations and business travel workflows, built with Flutter and Dart.",
+      "description": "Developed corporate mobility interfaces, booking workflows, maps, and service integrations in Flutter and Dart, using Riverpod for state management.",
       "badge": "Completed",
       "image": "/images/fomo-corp-cover.webp",
       "tags": [
@@ -53,7 +53,7 @@
     },
     {
       "title": "Fomo Cabs",
-      "description": "Completed development of a B2C cab-booking app with Flutter and Dart, focused on rider discovery, booking flows, and customer-friendly journeys.",
+      "description": "Developed consumer cab-booking interfaces and map-based rider workflows in Flutter and Dart, using Provider for state management.",
       "badge": "Completed",
       "image": "/images/fomo-cabs-cover.webp",
       "tags": [
@@ -78,7 +78,7 @@
     },
     {
       "title": "Tastes2plate",
-      "description": "Tastes2Plate (t2p) - Online Intercity Food Delivery App.",
+      "description": "Intercity food delivery with ordering, map, and payment workflows. Built with Flutter, GetX, Razorpay, and Google Maps.",
       "badge": "100K+ downloads",
       "image": "/images/t2p.webp",
       "tags": [
@@ -102,7 +102,7 @@
     },
     {
       "title": "InteriorChowk",
-      "description": "Interior chowk: The best architects and interior designers shopping platform without any brokerage fees",
+      "description": "A shopping platform for architects and interior designers, built with Flutter and Provider, with Razorpay payments and Google Maps integration.",
       "badge": "10K+ downloads",
       "image": "/images/ic.webp",
       "tags": [
@@ -125,7 +125,7 @@
     },
     {
       "title": "RucJa",
-      "description": "Health Monitor Application with IoT devices and Bluetooth connectivity.",
+      "description": "Health Monitor Application connecting IoT devices through Bluetooth, built with Flutter and Riverpod.",
       "badge": "Completed",
       "image": "/images/rucja.webp",
       "tags": [
@@ -147,7 +147,7 @@
     },
     {
       "title": "YumFresh",
-      "description": "Your Ultimate Destination for Fresh Fish, Chicken & Mutton Delivery in Kolkata & Howrah",
+      "description": "Fresh fish, chicken, and mutton delivery across Kolkata and Howrah. Built with Flutter and Provider, with Razorpay payments and Google Maps integration.",
       "badge": "Completed",
       "image": "/images/yumfresh.webp",
       "tags": [
@@ -166,7 +166,7 @@
     },
     {
       "title": "CucuApp",
-      "description": "The CucuApp is developed to provide farmers and agricultural stakeholders with critical, evidence-based information on effective cucumber farming practices.",
+      "description": "An agricultural information app supporting cucumber farming practices, built with Flutter, GetX, and localization for accessible regional content.",
       "badge": "Completed",
       "image": "/images/cucuapp.webp",
       "tags": [
@@ -184,7 +184,7 @@
     },
     {
       "title": "SME World Asia",
-      "description": "The app provides news, insights, and practical guidance to support the development of SMEs across India and beyond.",
+      "description": "A Flutter news and publishing app using WebView to present insights and guidance for small and medium businesses.",
       "badge": "Completed",
       "image": "/images/sme.webp",
       "tags": [

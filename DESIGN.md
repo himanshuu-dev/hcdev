@@ -9,3 +9,5 @@ Use comic chapter labels, rectangular controls with visible focus, lightly rotat
 The layout stacks naturally below 700px. Respect reduced motion. Keep project disclosures keyboard operable and preserve contact feedback and the CV download.
 
 Validation for this redesign: ESLint and production build passed. Chrome was used to inspect desktop and mobile renders. No horizontal overflow was found at 320, 390, 768, 1024, or 1440 pixels. Theme switching and project expansion worked, all eight project images loaded, and no browser runtime errors were reported.
+
+Project features link to a shared Fomo engineering case study. Keep its claims grounded in confirmed contributions: car animation, background tracking, offline caching/data loss, and crash reduction. Download milestones describe the apps, not individual performance. Theme choices persist via localStorage, with storage failure handled gracefully.
