@@ -32,3 +32,9 @@ After implementation, inspect the rendered pages at mobile and desktop
 sizes if browser tools are available. Refine generic or inconsistent
 details. Only claim checks you actually performed.
 <!-- End Design Rules -->
+## Project skill
+
+For portfolio design, content, CV, SEO, or deployment work, read
+[portfolio-maintenance](.agents/skills/portfolio-maintenance/SKILL.md).
+It records project-specific conventions and verification steps. Apply only the
+parts relevant to the current request; it does not authorize publishing by itself.
