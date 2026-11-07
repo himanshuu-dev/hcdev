@@ -5,7 +5,7 @@ import { faFire, faCode, faMap, faCalendarCheck, faLaptopCode, faTableCellsLarge
 export const socialLinks = [
   { label: "GitHub", url: "https://github.com/himanshuu-dev", icon: faGithub },
   { label: "LinkedIn", url: "https://www.linkedin.com/in/himanshu-choudhary-dev-1999-new/", icon: faLinkedin },
-  { label: "Instagram", url: "https://www.instagram.com/himanshu_ch1999/", icon: faInstagram },
+  { label: "Instagram", url: "https://www.instagram.com/himanshuu.1999", icon: faInstagram },
 ];
 const skillIcons: Record<string, IconDefinition> = {
   Flutter: faFlutter, Dart: faDartLang, Firebase: faFire,
