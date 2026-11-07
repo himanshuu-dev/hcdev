@@ -1,10 +1,10 @@
 # Himanshu Choudhary — Portfolio
 
-An editorial Next.js portfolio featuring real Flutter work across mobility, commerce, and health.
+A cartoon-inspired Next.js portfolio featuring real Flutter work across mobility, commerce, and health.
 
 ## Local development
 
-Run from D:/Projects/Personal/new_portfolio/flutter_portfolio:
+Run from the repository root:
 
 ```powershell
 npm install
@@ -17,8 +17,10 @@ Open http://localhost:3000.
 
 ```powershell
 npm run build
-npm start
+python -m http.server 8080 --directory out
 ```
+
+Builds generate a static site in `out/`. Pushes to `main` run `.github/workflows/deploy-pages.yml`, which lints, builds, and deploys the export to GitHub Pages at https://hcdev.in. The Pages publishing source is GitHub Actions. `public/CNAME` preserves the custom domain; `public/.nojekyll` preserves Next.js assets. Images use the existing WebP files without a server-side optimization endpoint.
 
 ## Project map
 
