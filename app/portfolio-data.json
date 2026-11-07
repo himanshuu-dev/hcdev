@@ -21,7 +21,9 @@
     "UI/UX",
     "Razorpay Integration",
     "Google Play Publishing",
-    "App Store Publishing"
+    "App Store Publishing",
+    "Codex",
+    "Claude"
   ],
   "projects": [
     {
@@ -99,28 +101,6 @@
       ]
     },
     {
-      "title": "RucJa",
-      "description": "Health Monitor Application",
-      "badge": "Completed",
-      "image": "/images/rucja.webp",
-      "tags": [
-        "Flutter",
-        "Dart",
-        "Riverpod",
-        "Bluetooth"
-      ],
-      "links": [
-        {
-          "url": "https://play.google.com/store/apps/details?id=app.rucja.io",
-          "label": "Play Store"
-        },
-        {
-          "url": "https://apps.apple.com/in/app/rucja/id6748079206",
-          "label": "App Store"
-        }
-      ]
-    },
-    {
       "title": "InteriorChowk",
       "description": "Interior chowk: The best architects and interior designers shopping platform without any brokerage fees",
       "badge": "10K+ downloads",
@@ -139,6 +119,28 @@
         },
         {
           "url": "https://apps.apple.com/in/app/interiorchowk/id6554003290",
+          "label": "App Store"
+        }
+      ]
+    },
+    {
+      "title": "RucJa",
+      "description": "Health Monitor Application with IoT devices and Bluetooth connectivity.",
+      "badge": "Completed",
+      "image": "/images/rucja.webp",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Riverpod",
+        "Bluetooth"
+      ],
+      "links": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=app.rucja.io",
+          "label": "Play Store"
+        },
+        {
+          "url": "https://apps.apple.com/in/app/rucja/id6748079206",
           "label": "App Store"
         }
       ]
@@ -202,8 +204,8 @@
     {
       "title": "Flutter Developer",
       "subtitle": "Zopflix (Shipra Travels)",
-      "description": "Completed Flutter development for two mobility products: Fomo Corp, a B2B platform for corporate cab operations and business travel workflows, and Fomo Cabs, a B2C cab-booking app focused on rider discovery and booking journeys. Worked on cross-platform interfaces, booking and maps experiences, and integrations, with a focus on maintainable architecture and consistent user experiences. Employment is scheduled to conclude on November 25, 2026.",
-      "year": "Mar 2, 2026 - Nov 25, 2026 (scheduled end)"
+      "description": "Completed Flutter development for two mobility products: Fomo Corp, a B2B platform for corporate cab operations and business travel workflows, and Fomo Cabs, a B2C cab-booking app focused on rider discovery and booking journeys. Worked on cross-platform interfaces, booking and maps experiences, and integrations, with a focus on maintainable architecture and consistent user experiences.",
+      "year": "Mar 2026 - Oct 2026"
     },
     {
       "title": "Flutter Developer",
