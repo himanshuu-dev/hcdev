@@ -1,4 +1,5 @@
 import Image from "next/image";
+import StructuredData from "./structured-data";
 import data from "./portfolio-data.json";
 import DeveloperScene from "./developer-scene";
 import ThemeToggle from "./theme-toggle";
@@ -22,12 +23,13 @@ function StoreLinks({ project }: { project: typeof data.projects[number] }) {
 }
 export default function Home() {
   return <>
+    <StructuredData/>
     <a className="skip-link" href="#main">Skip to content</a>
     <div className="portfolio" id="home">
       <header className="navbar"><a className="brand" href="#home" aria-label="hcdev.in — Himanshu Choudhary home">hcdev<span>.</span>in</a><span className="nav-caption">Developer by day.<br/>Main character, always.</span><nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav><ThemeToggle/></header>
       <main id="main">
         <section className="hero" aria-labelledby="intro-title">
-          <div className="hero-copy"><p className="eyebrow"><span className="tiny-cross" aria-hidden="true">✳</span> Himanshu Choudhary / Flutter developer</p><h1 id="intro-title">Code. Create.<br/><em>A little magic.</em></h1><p className="hero-description">Hey, I’m Himanshu. A Flutter developer turning everyday ideas into thoughtfully built Android & iOS apps. Welcome to my little corner of the internet.</p><div className="hero-actions"><a className="button" href="/himanshu.pdf" download="Himanshu-Choudhary-CV.pdf">Download my CV <span aria-hidden="true">↓</span></a></div></div>
+          <div className="hero-copy"><p className="eyebrow"><span className="tiny-cross" aria-hidden="true">✳</span> Himanshu Choudhary / Flutter developer</p><h1 id="intro-title">Flutter apps.<br/><em>A little magic.</em></h1><p className="hero-description">Hey, I’m Himanshu, a Flutter developer based in Panchkula, India, turning everyday ideas into thoughtfully built Android & iOS apps. Welcome to my little corner of the internet.</p><div className="hero-actions"><a className="button" href="/himanshu.pdf" download="Himanshu-Choudhary-CV.pdf">Download my CV <span aria-hidden="true">↓</span></a></div></div>
           <DeveloperScene/>
           <div className="hero-bottom"><span>3+ years building with Flutter</span><span>Android / iOS</span><a href="#work">A selection of my work <span aria-hidden="true">↓</span></a></div>
         </section>
