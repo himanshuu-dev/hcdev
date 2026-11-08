@@ -3,16 +3,30 @@ import { useSyncExternalStore } from "react";
 
 const themeEvent = "portfolio-theme-change";
 function subscribe(onChange: () => void) {
+  const system = window.matchMedia("(prefers-color-scheme: dark)");
+  const savedTheme = () => {
+    try { return localStorage.getItem("hcdev-theme"); } catch { return null; }
+  };
+  function applyPreferredTheme() {
+    const saved = savedTheme();
+    document.documentElement.dataset.theme =
+      saved === "dark" || saved === "light" ? saved : system.matches ? "dark" : "light";
+    onChange();
+  }
   function syncStorage(event: StorageEvent) {
     if (event.key !== "hcdev-theme" && event.key !== null) return;
-    document.documentElement.dataset.theme = event.newValue === "dark" ? "dark" : "light";
-    onChange();
+    applyPreferredTheme();
+  }
+  function syncSystem() {
+    if (savedTheme() !== "dark" && savedTheme() !== "light") applyPreferredTheme();
   }
   window.addEventListener(themeEvent, onChange);
   window.addEventListener("storage", syncStorage);
+  system.addEventListener("change", syncSystem);
   return () => {
     window.removeEventListener(themeEvent, onChange);
     window.removeEventListener("storage", syncStorage);
+    system.removeEventListener("change", syncSystem);
   };
 }
 export default function ThemeToggle() {
