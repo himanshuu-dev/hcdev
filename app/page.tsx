@@ -26,7 +26,7 @@ export default function Home() {
     <StructuredData/>
     <a className="skip-link" href="#main">Skip to content</a>
     <div className="portfolio" id="home">
-      <header className="navbar"><a className="brand" href="#home" aria-label="hcdev.in — Himanshu Choudhary home">hcdev<span>.</span>in</a><span className="nav-caption">Independent Flutter developer<br/>Panchkula, India</span><nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav><ThemeToggle/></header>
+      <header className="navbar"><a className="brand" href="#home" aria-label="hcdev.in — Himanshu Choudhary home">hcdev<span>.</span>in</a><span className="nav-caption">Flutter developer<br/>Panchkula, India</span><nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav><ThemeToggle/></header>
       <main id="main">
         <section className="hero" aria-labelledby="intro-title">
           <div className="hero-copy"><p className="eyebrow">Himanshu Choudhary / Flutter developer</p><h1 id="intro-title">I build software<br/><em>for real life.</em></h1><p className="hero-description">I’m Himanshu, an independent Flutter app developer based in Panchkula, India. I help businesses build, redesign, and maintain Android and iOS apps, from polished interfaces to complex integrations and production releases.</p><div className="hero-actions"><a className="button" href="/himanshu.pdf" download="Himanshu-Choudhary-CV.pdf">Download CV</a><a className="button-secondary" href="#contact">Get in touch</a></div></div>
