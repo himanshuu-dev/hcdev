@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, DM_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
+import "./editorial.css";
 import { site } from "./site-config";
 const sans = DM_Sans({variable:"--font-sans",subsets:["latin"],display:"swap"});
 const mono = DM_Mono({variable:"--font-mono",subsets:["latin"],weight:["400","500"],display:"swap"});
