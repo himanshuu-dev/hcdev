@@ -19,7 +19,7 @@ function DownloadBadge({ badge }: { badge: string }) {
 }
 
 function StoreLinks({ project }: { project: typeof data.projects[number] }) {
-  return <div className="store-links">{project.links.map(link => <a href={link.url} target="_blank" rel="noopener noreferrer" key={link.label} aria-label={`${project.title} on ${link.label}`}>{link.label}</a>)}</div>;
+  return <div className="store-links">{project.links.map(link => <a href={link.url} target="_blank" rel="noopener noreferrer" key={link.label} aria-label={`${project.title} on ${link.label}`}>{link.label}<svg className="store-link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7ZM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7Z"/></svg></a>)}</div>;
 }
 export default function Home() {
   return <>
