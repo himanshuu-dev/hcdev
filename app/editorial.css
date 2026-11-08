@@ -98,7 +98,31 @@ h2 em,.case-study-header em { font-family:var(--font-serif),serif; font-style:it
 .contact .eyebrow,.contact .contact-bottom p { color:var(--paper); }
 .contact-bottom { border-color:rgba(255,255,255,.3); }
 .contact a:hover { color:#E0A98F; }
-:root[data-theme="dark"] .contact { background:#303B35; }
+/* The dark contact panel needs its own foreground palette: --paper is dark in dark mode. */
+:root[data-theme="dark"] .contact {
+  background:#303B35;
+  color:#F2F1E9;
+}
+:root[data-theme="dark"] .contact h2,
+:root[data-theme="dark"] .contact .email,
+:root[data-theme="dark"] .contact .contact-phone,
+:root[data-theme="dark"] .contact .socials a,
+:root[data-theme="dark"] .contact .copy-email button {
+  color:#F2F1E9;
+}
+:root[data-theme="dark"] .contact .eyebrow,
+:root[data-theme="dark"] .contact .contact-bottom p,
+:root[data-theme="dark"] .contact .copy-email>span {
+  color:#C8D1C8;
+}
+:root[data-theme="dark"] .contact h2 em { color:#E7A28A; }
+:root[data-theme="dark"] .contact .contact-bottom { border-top-color:#65766C; }
+:root[data-theme="dark"] .contact a:hover,
+:root[data-theme="dark"] .contact .copy-email button:hover { color:#E7A28A; }
+:root[data-theme="dark"] .contact a:focus-visible,
+:root[data-theme="dark"] .contact button:focus-visible {
+  outline-color:#E7A28A;
+}
 :root[data-theme="dark"] .toolbox li { color:var(--body); background:transparent; }
 :root[data-theme="dark"] .button { background:var(--ink); color:var(--paper); }
 :root[data-theme="dark"] .button:hover { background:var(--accent); color:#181F1D; }
