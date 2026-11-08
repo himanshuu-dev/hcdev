@@ -15,11 +15,11 @@ const development = [
 
 function DownloadBadge({ badge }: { badge: string }) {
   if (!badge.includes("downloads")) return null;
-  return <span className="download-badge"><span className="download-symbol" aria-hidden="true">↓</span><span><strong>{badge.split(" ")[0]}</strong><span className="download-label">app downloads</span></span></span>;
+  return <span className="download-badge"><span><strong>{badge.split(" ")[0]}</strong><span className="download-label">app downloads</span></span></span>;
 }
 
 function StoreLinks({ project }: { project: typeof data.projects[number] }) {
-  return <div className="store-links">{project.links.map(link => <a href={link.url} target="_blank" rel="noopener noreferrer" key={link.label} aria-label={`${project.title} on ${link.label}`}>{link.label}<svg className="store-link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7ZM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7Z"/></svg></a>)}</div>;
+  return <div className="store-links">{project.links.map(link => <a href={link.url} target="_blank" rel="noopener noreferrer" key={link.label} aria-label={`${project.title} on ${link.label}`}>{link.label}</a>)}</div>;
 }
 export default function Home() {
   return <>
@@ -29,9 +29,9 @@ export default function Home() {
       <header className="navbar"><a className="brand" href="#home" aria-label="hcdev.in — Himanshu Choudhary home">hcdev<span>.</span>in</a><span className="nav-caption">Independent Flutter developer<br/>Panchkula, India</span><nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav><ThemeToggle/></header>
       <main id="main">
         <section className="hero" aria-labelledby="intro-title">
-          <div className="hero-copy"><p className="eyebrow"><span className="tiny-cross" aria-hidden="true">✳</span> Himanshu Choudhary / Flutter developer</p><h1 id="intro-title">I build software<br/><em>for real life.</em></h1><p className="hero-description">I’m Himanshu, a Flutter developer based in Panchkula, India. I build thoughtful Android and iOS experiences, from polished interfaces to maps, real-time workflows, and dependable releases.</p><div className="hero-actions"><a className="button" href="/himanshu.pdf" download="Himanshu-Choudhary-CV.pdf">Download CV <span aria-hidden="true">↓</span></a><a className="button-secondary" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div></div>
+          <div className="hero-copy"><p className="eyebrow">Himanshu Choudhary / Flutter developer</p><h1 id="intro-title">I build software<br/><em>for real life.</em></h1><p className="hero-description">I’m Himanshu, a Flutter developer based in Panchkula, India. I build thoughtful Android and iOS experiences, from polished interfaces to maps, real-time workflows, and dependable releases.</p><div className="hero-actions"><a className="button" href="/himanshu.pdf" download="Himanshu-Choudhary-CV.pdf">Download CV</a><a className="button-secondary" href="#contact">Get in touch</a></div></div>
           <DeveloperScene/>
-          <div className="hero-bottom"><span>3+ years building with Flutter</span><span>Android / iOS</span><a href="#work">A selection of my work <span aria-hidden="true">↓</span></a></div>
+          <div className="hero-bottom"><span>3+ years building with Flutter</span><span>Android / iOS</span><a href="#work">A selection of my work</a></div>
         </section>
         <section id="work" className="work-section" aria-labelledby="work-title"><div className="section-heading"><p className="eyebrow">01 / Selected work</p><h2 id="work-title">Selected <em>work.</em></h2><p className="work-intro-note">Real products across mobility, commerce, food and healthcare. Designed for the people who use them.</p></div>
           <div className="featured-projects" aria-label="Featured Flutter projects">{data.projects.slice(0,2).map((project,index) => <article className={`feature feature-${index}`} key={project.title}><div className="feature-art"><div className="art-label"><span>{sectors[index]}</span><span>0{index+1} / 08</span></div><div className="feature-image"><Image src={project.image} alt={`${project.title} app screens`} fill sizes="(max-width: 700px) 90vw, 58vw"/></div><span className="art-foot">Flutter · Android & iOS</span></div><div className="feature-copy"><p className="eyebrow">{index === 0 ? "For the working day" : "For the way there"}</p><h3>{project.title}</h3><p>{index === 0 ? "Business travel, with the moving parts in one place. A B2B app for corporate cab operations and booking workflows." : "From finding a ride to making a booking. A consumer cab app built around a clear, straightforward rider journey."}</p><p className="project-contribution"><strong>My contribution</strong>{project.description}</p><ul className="tags">{project.tags.map(tag => <li key={tag}>{tag}</li>)}</ul><StoreLinks project={project}/></div></article>)}</div>
@@ -41,12 +41,9 @@ export default function Home() {
               <h4 className="app-entry-heading" id={`project-${index}`}><span className="project-number">0{index+3}</span><span className="index-name">{project.title}</span></h4>
               <div className="index-image"><Image src={project.image} alt={`${project.title} app preview`} fill sizes="(max-width:700px) 90vw, 42vw"/></div>
               <div className="app-entry-meta"><span className="app-sector">{sectors[index+2]}<span className="app-platform">{project.links.length > 1 ? "Android & iOS" : "Android"}</span></span><DownloadBadge badge={project.badge}/></div>
+              <p className="app-description">{project.description}</p>
               <StoreLinks project={project}/>
             </div>
-            <details className="project-disclosure">
-              <summary><span>Project details</span><span className="expand" aria-hidden="true">+</span></summary>
-              <div className="app-detail"><p>{project.description}</p><ul className="tags">{project.tags.map(tag => <li key={tag}>{tag}</li>)}</ul></div>
-            </details>
           </article>)}</div>
         </section>
         <section id="about" className="about-section" aria-labelledby="about-title"><div className="section-rail"><p className="eyebrow">02 / About me</p><h2 id="about-title">The person <br/><em>behind the code.</em></h2></div><div className="about-content"><p className="about-lead">I like making complex things feel simple on a small screen.</p><p>Over the past 3+ years, I’ve worked on mobility, food delivery, commerce, and health apps. My work covers the interface and everything it depends on: state management, APIs, maps, payments, and the journey to the app stores.</p><p>I care about code that the next developer can understand, and apps that people can use without thinking about the code at all.</p><div className="toolbox"><p className="eyebrow">Tools of the trade</p><ul>{data.skills.map(skill => <li key={skill}>{skill}</li>)}</ul></div></div></section>
@@ -61,7 +58,7 @@ export default function Home() {
         </section>
         <section className="experience-section" aria-labelledby="experience-title"><div className="section-rail"><p className="eyebrow">03 / Experience</p><h2 id="experience-title">Where I’ve <br/><em>built and learned.</em></h2></div><ol className="timeline">{data.timeline.map((item,index) => <li key={item.subtitle}><p className="eyebrow">{item.year}</p><h3>{item.subtitle}</h3><p className="role">{item.title}</p><p>{index===0 ? "Built Fomo Corp and Fomo Cabs: two Flutter mobility products covering business travel, rider booking, maps, and cross-platform interfaces." : index===1 ? "Developed and maintained cross-platform apps. Integrated Firebase, built state management with Riverpod, GetX, and Provider, and refactored older codebases." : item.description}</p></li>)}</ol></section>
         <section id="contact" className="contact" aria-labelledby="contact-title"><div className="contact-top"><p className="eyebrow">Have something in mind? / Let’s talk</p></div><h2 id="contact-title">Have a project?<br/><em>Let’s talk.</em></h2><div className="contact-bottom"><div><p>For a project, a role, or a good conversation.</p><a className="email" href="mailto:bohimanshu@gmail.com">bohimanshu@gmail.com</a><ContactActions/></div><div className="socials">{socialLinks.map(link => <a href={link.url} target="_blank" rel="noopener noreferrer" key={link.label}>{link.label}</a>)}</div></div></section>
-      </main><footer><a className="brand" href="#home" aria-label="hcdev.in home">hcdev<span>.</span>in</a><p>Himanshu Choudhary · Flutter developer</p><a href="#home">Back to top ↑</a></footer>
+      </main><footer><a className="brand" href="#home" aria-label="hcdev.in home">hcdev<span>.</span>in</a><p>Himanshu Choudhary · Flutter developer</p><a href="#home">Back to top</a></footer>
     </div>
   </>;
 }
