@@ -28,7 +28,7 @@
   "projects": [
     {
       "title": "Fomo Corp",
-      "description": "Developed corporate mobility interfaces, booking workflows, maps, and service integrations in Flutter and Dart, using Riverpod for state management.",
+      "description": "Built the complete Fomo Corp Flutter app with full development responsibility. A B2B corporate cab service covering business travel bookings, maps, and mobility workflows.",
       "badge": "Completed",
       "image": "/images/fomo-corp-cover.webp",
       "tags": [
@@ -53,7 +53,7 @@
     },
     {
       "title": "Fomo Cabs",
-      "description": "Developed consumer cab-booking interfaces and map-based rider workflows in Flutter and Dart, using Provider for state management.",
+      "description": "Took full responsibility for redesigning Fomo Cabs, fixing bugs, and delivering new features based on requirements for its consumer cab-booking experience.",
       "badge": "Completed",
       "image": "/images/fomo-cabs-cover.webp",
       "tags": [
@@ -78,7 +78,7 @@
     },
     {
       "title": "Tastes2plate",
-      "description": "Intercity food delivery with ordering, map, and payment workflows. Built with Flutter, GetX, Razorpay, and Google Maps.",
+      "description": "Independently built the complete Tastes2plate intercity food-delivery app in Flutter, including ordering, maps, and payment flows using GetX, Razorpay, and Google Maps.",
       "badge": "100K+ downloads",
       "image": "/images/t2p.webp",
       "tags": [
@@ -102,7 +102,7 @@
     },
     {
       "title": "InteriorChowk",
-      "description": "A shopping platform for architects and interior designers, built with Flutter and Provider, with Razorpay payments and Google Maps integration.",
+      "description": "Independently built the complete InteriorChowk Flutter shopping app for architects and interior designers, including payments, maps, and commerce workflows.",
       "badge": "10K+ downloads",
       "image": "/images/ic.webp",
       "tags": [
@@ -125,7 +125,7 @@
     },
     {
       "title": "RucJa",
-      "description": "Health Monitor Application connecting IoT devices through Bluetooth, built with Flutter and Riverpod.",
+      "description": "Built the complete RucJa Flutter health-monitoring app, integrating Bluetooth connectivity with medical devices from brands such as Tracky.",
       "badge": "Completed",
       "image": "/images/rucja.webp",
       "tags": [
@@ -147,7 +147,7 @@
     },
     {
       "title": "YumFresh",
-      "description": "Fresh fish, chicken, and mutton delivery across Kolkata and Howrah. Built with Flutter and Provider, with Razorpay payments and Google Maps integration.",
+      "description": "Improved the YumFresh food-delivery app's UI, fixed bugs, and implemented new features according to project requirements.",
       "badge": "Completed",
       "image": "/images/yumfresh.webp",
       "tags": [
@@ -166,7 +166,7 @@
     },
     {
       "title": "CucuApp",
-      "description": "An agricultural information app supporting cucumber farming practices, built with Flutter, GetX, and localization for accessible regional content.",
+      "description": "Built the complete CucuApp agricultural information app in Flutter, including multilingual support for regional audiences.",
       "badge": "Completed",
       "image": "/images/cucuapp.webp",
       "tags": [
@@ -184,7 +184,7 @@
     },
     {
       "title": "SME World Asia",
-      "description": "A Flutter news and publishing app using WebView to present insights and guidance for small and medium businesses.",
+      "description": "Improved the SME World Asia news app's UI, fixed bugs, and delivered new features based on project requirements.",
       "badge": "Completed",
       "image": "/images/sme.webp",
       "tags": [
