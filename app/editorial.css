@@ -245,3 +245,70 @@ footer>a:last-child { text-decoration:underline; text-underline-offset:5px; }
   .app-description { font-size:14px; margin-top:13px; }
   .app-entry { padding-bottom:26px; }
 }
+
+/* Client-facing service summary, with the portfolio's editorial hierarchy. */
+.hire-section {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);
+  gap:clamp(36px,6vw,95px);
+  margin-top:110px;
+  padding-top:48px;
+  border-top:1px solid var(--rule);
+  scroll-margin-top:40px;
+}
+.hire-intro h2 {
+  max-width:550px;
+  font-size:clamp(38px,4.1vw,57px);
+  margin:20px 0 24px;
+}
+.hire-intro h2 em {
+  font-family:var(--font-serif),serif;
+  font-style:italic;
+  font-weight:400;
+}
+.hire-intro>p:not(.eyebrow) {
+  max-width:510px;
+  font-size:15px;
+  line-height:1.8;
+  color:var(--body);
+}
+.hire-link {
+  display:inline-flex;
+  margin-top:28px;
+  padding-bottom:5px;
+  font-size:14px;
+  font-weight:650;
+  border-bottom:1px solid var(--ink);
+}
+.hire-link:hover { border-color:var(--accent); }
+.hire-services h3 {
+  font-size:18px;
+  letter-spacing:-.02em;
+  padding-bottom:16px;
+  border-bottom:1px solid var(--rule);
+}
+.hire-services ul { margin:0; padding:0; list-style:none; }
+.hire-services li {
+  display:grid;
+  grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);
+  gap:22px;
+  padding:23px 0;
+  border-bottom:1px solid var(--rule);
+}
+.hire-services li strong { font-size:14px; font-weight:650; line-height:1.5; }
+.hire-services li span { font-size:13px; color:var(--body); line-height:1.7; }
+.contact-phone {
+  display:block;
+  width:fit-content;
+  font-size:clamp(16px,1.8vw,23px);
+  font-weight:600;
+  margin-top:13px;
+  text-decoration:underline;
+  text-underline-offset:5px;
+}
+@media(max-width:700px) {
+  .hire-section { grid-template-columns:1fr; gap:34px; margin-top:68px; padding-top:32px; }
+  .hire-intro h2 { font-size:clamp(38px,9vw,49px); }
+  .hire-services li { grid-template-columns:1fr; gap:7px; padding:19px 0; }
+  .contact-phone { margin-top:16px; }
+}
