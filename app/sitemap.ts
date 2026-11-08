@@ -2,5 +2,9 @@ import type { MetadataRoute } from "next";
 import { site } from "./site-config";
 export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [{ url: `${site.url}/` }];
+  return [
+    { url: `${site.url}/` },
+    { url: `${site.url}/instantsaver/` },
+    { url: `${site.url}/instantsaver/privacy-policy.html` },
+  ];
 }
